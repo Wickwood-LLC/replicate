@@ -176,3 +176,23 @@ function replicate_replicate_entity_comment(&$entity) {
   $entity->created = NULL;
   $entity->changed = NULL;
 }
+
+/**
+ * Implements hook_replicate_entity_ENTITY_TYPE().
+ */
+function replicate_replicate_entity_user(&$entity) {
+  $entity->uid = NULL;
+  $entity->vid = NULL;
+  $entity->created = NULL;
+  $entity->changed = NULL;
+}
+
+/**
+ * Implements hook_replicate_entity_ENTITY_TYPE().
+ */
+function replicate_replicate_entity_profile2(&$entity) {
+  $entity->pid = NULL;
+  $entity->vid = NULL;
+  $entity->created = NULL;
+  $entity->changed = NULL;
+}
